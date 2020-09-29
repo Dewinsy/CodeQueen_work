@@ -2,10 +2,13 @@
     background-color: grey;
     padding: 10px;
 }
-
-#content {
+#singer {
+    color:rgb(212, 23, 23);
+}
+#lyrics {
     text-align: center;
-    color: brown;
+    color: rgb(10, 10, 10);
+
 }
 
 p {
@@ -13,7 +16,7 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     color: black;
-
+    text-align:center;
 }
 
 a:hover {
