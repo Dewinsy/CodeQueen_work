@@ -1,0 +1,18 @@
+img {
+    width: 400px;
+    border:dotted;
+}
+
+h1 {
+    color:purple;
+
+}
+
+body{
+text-align:center;
+}
+
+ul{
+    text-align:left;
+    padding-left: 35rem;
+}
