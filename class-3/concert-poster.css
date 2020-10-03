@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+h1 {
+    color: blue;
+}
+
+h1:hover {
+    background-color: green;
+}
+
+h2 {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+}
