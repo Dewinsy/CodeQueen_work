@@ -1,0 +1,40 @@
+#emoji{
+    width: 35px;
+    height: 35px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+body{
+    background-color: aliceblue;
+}
+body > div{
+    margin:auto;
+    width:50%;
+    text-align: center;
+    background-color: white ;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ul{
+    text-align: left;
+    padding-left: 50%;
+}
+
+h3{
+    color:green;
+}
+
+a{
+    color:blue;
+    text-decoration: none;
+}
+
+i{
+    color: black;
+}
