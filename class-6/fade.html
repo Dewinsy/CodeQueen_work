@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dog Switch</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="fade.css"/>
+    </head>
+    <body>
+        <div class="dog-fade">Dog Fade</div>
+        <img src="https://images.unsplash.com/photo-1505628346881-b72b27e84530?auto=format&fit=crop&w=334&q=80">
+    </body>
+</html>
+
+<script>
+    $(".dog-fade").click(function() {
+        $("img").fadeToggle();
+        //fadeToggle() will fade out when the Dog Fade button is clicked 
+        //...and then fade in when the button is clicked again.
+    });
+</script>
