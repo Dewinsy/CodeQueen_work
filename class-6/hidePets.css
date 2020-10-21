@@ -1,0 +1,15 @@
+body> .images{
+    margin: 20px;
+    display: flex;
+}
+
+body> .images >div{
+    margin:20px;
+}
+.button{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 950px;
+}
+
