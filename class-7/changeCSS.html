@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>06.3 jQuery Actions W/ Arguments Demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="styleshhet" href="changeCSS.css"/>
+    </head>
+    <body>
+        <h1>We're changing colors!!!</h1>
+        <img src="https://media.giphy.com/media/Ge86XF8AVY1KE/giphy.gif">
+        <br>
+        <button class="change-color">Click Me to Change Color!!!</button>
+        <button class="change-heading">Click Me to Heading Color!!!</button>
+        <button class="change-image">Click Me to Image Height!!!</button>
+        
+
+    </body>
+</html>
+
+<script>
+    $(".change-color").click(function() {
+        $("body").css("background-color","orange");
+    });
+    $(".change-heading").click(function() {
+        $("h1").css("color","red");
+    });
+    $(".change-image").click(function() {
+        $("img").css("height","100px");
+    });
+</script>
+
+    
