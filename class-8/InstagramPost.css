@@ -1,0 +1,37 @@
+.main {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.name {
+    font-weight: bolder;
+}
+
+.profile {
+    width: 50px;
+    border-radius: 50%;
+    margin: 45px 20px 45px 10px;
+    align-self: center;
+}
+
+.header {
+    display: flex;
+    border-top: solid lightgrey 1px;
+    margin-bottom: -30px;
+
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    padding: 10px 0 0 0;
+}
+
+p {
+    border-bottom: solid lightgrey 1px;
+    padding: 10px 0;
+}
