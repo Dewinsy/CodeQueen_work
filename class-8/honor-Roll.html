@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8.3 Compound Conditionals Guided Practice</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <h1><strong>Who Made the Honor Roll </strong> </h1>
+        <div class="grade">
+            <h3>Enter your GPA here:</h3>
+            <p>GPA:</p>
+            <input class="gpa">
+            <p>Name</p>
+            <input class="name">
+        </div>
+        <button> Add Info</button>
+        <h2>Principal Honor Roll</h2>
+        <div class="principal">
+
+        </div>
+        <h2> Honor Roll</h2>
+        <div class="regular">
+
+        </div>
+
+    </body>
+</html>
+<script>
+    $("button").click(function() {
+    let myGrade = parseFloat($(".gpa").val());
+    let myName = $(".name").val();
+    if (myGrade >= 4.0) {
+        $(".principal").text(myName);
+    } else if (myGrade >= 3.0 && myGrade <= 3.9) {
+        $(".regular").text(myName);
+
+    } else if (myGrade <= 2.9) {
+        $("body").text("Sorry " + myName + ", you are not on any honor roll");
+    }
+
+});
+</script>

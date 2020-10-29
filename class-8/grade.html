@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grading System</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    </head>
+    <body>
+        <div class="result">
+            <input id="inputs" type="text" placeholder="Enter result here">
+            <button>Display Grade</button>
+            <p class="result"></p>
+        </div>
+    </body>
+</html>
+<script>
+        let grade;
+
+$("button").click(function() {
+    let result = parseInt($("#inputs").val());
+    if (result >= 80 && result <= 100) {
+         grade = 'A';
+    } else if (result >= 70 && result <= 79) {
+        grade = 'B';
+    } else if (result >= 60 && result <= 69) {
+        grade = 'C';
+    } else if (result >= 50 && result <= 59) {
+        grade = 'D';
+    } else if (result >= 0 && result <= 49) {
+        grade = 'F';
+    } else {
+        grade = 'Invalid Result!';
+    }
+
+       $("p").text('Grade: ' + grade);
+});
+</script>

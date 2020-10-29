@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>08.3 Compound Conditionals: Code Nation Social Club</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="Compound-Conditionals.css"
+
+    </head>
+    <body>
+        <h1><strong>Code Nation</strong> Social Club</h1>
+        <div class="login">
+            <h3>Log into your account</h3>
+            <p>Username:</p>
+            <input class="username">
+            <p>Password:</p>
+            <input class="password">
+            <button>Login</button>
+            <div class="message"></div>
+        </div>
+    </body>
+</html>
+<script>
+    // set the correct username and password combination below
+var correctUsername = "CN Elites";
+var correctPassword = "code_it_pro";
+
+
+$("button").click(function() {
+    var username = $(".username").val();
+    var password = $(".password").val();
+    if (username === correctUsername && password === correctPassword) {
+        $(".message").text("Login successful");
+    } else if (username === "" || password === "") {
+        $(".message").text("Fill in all the details");
+    } else if (username !== correctUsername || password !== correctPassword) {
+        //$(".message").text("Incorrect Username or Password");
+
+        if (username === correctUsername && password !== correctPassword) {
+            $(".message").text("Incorrect Password");
+        } else if (username !== correctUsername && password === correctPassword) {
+            $(".message").text("Incorrect username");
+        }
+    }
+
+
+});
+</script>

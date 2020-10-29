@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Movie</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <input id="input" placeholder="Enter you age here">
+    <p><button id="inputCheck">Done</button></p>
+
+</body>
+</html>
+
+<script >
+    $("#inputCheck").click(function() {
+        let age = parseInt($("#input").val());
+        
+        if (age>17) {
+            $("p").text("You are old enough to watch this movie");
+        }
+        else{
+            $("p").text("You are too young to watch this movie.");
+        }
+    });
+</script>

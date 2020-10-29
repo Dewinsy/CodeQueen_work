@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>08.2 Multiple Conditions: CodeGram</title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <h1>CodeGram: Choose a filter.</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg">
+        <p> Choose one of the following filters: Harlem, Bushwick, SOMA, or Sunset. </p>
+        <input placeholder="Filter Name">
+        <button class="applyFilter"> Apply filter </button>
+        <div>
+            <button class="reset">Reset</button>
+        </div>
+
+    </body>
+</html>
+<script>
+    let selectedFilter;
+
+    $(".applyFilter").click(function() {
+        let filter = $("input").val();
+        if (filter === "Harlem") {
+            $("img").css("filter", "contrast(115%) brightness(120%)");
+        } else if (filter === "Bushwick") {
+            $("img").css("filter", "contrast(50%) brightness(180%)");
+        } else if (filter === "SOMA") {
+            $("img").css("filter", "grayscale(50%) hue-rotate(10deg)");
+        } else if (filter === "Sunset") {
+            $("img").css("filter", "contrast(115%) hue-rotate(-10deg) saturate(180%)");
+        }
+    });
+
+    $(".reset").click(function() {
+        $("img").css("filter", "");
+    });
+</script>
