@@ -1,8 +1,8 @@
 
-const regButton = document.getElementById("reg-btn");
-regButton.addEventListener("click", () => {
-    window.location.href = "./registered.html";  
-  });
+// const regButton = document.getElementById("reg-btn");
+// regButton.addEventListener("click", () => {
+//     window.location.href = "./registered.html";  
+//   });
 
 let students = [];
 const addStudent = (ev)=>{
@@ -66,6 +66,7 @@ saveButton.addEventListener("click", () => {
     addStudent();
     var Table = document.getElementById("tabledata");
     Table.innerHTML = "";
+    //alert("Confirm Registration");
     drawTable("tabledata");       
     
     document.querySelector("form").reset(); //clear the form for the next entry
@@ -74,3 +75,8 @@ saveButton.addEventListener("click", () => {
     //window.location.href="./registered.html"+data
     
   });
+
+
+
+  
+
