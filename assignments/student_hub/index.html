@@ -5,22 +5,30 @@
     <title>STUDENT HUB</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=IBM+Plex+Serif&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="mainDiv">
+        
         <div class="intro">
-            <button id="register">
-               REGISTRATION
-            </button>
-            <button id="reg-btn">
-                STUDENT DATABASE 
-            </button>
+            
+            <div id="register">            
+                Register
+            </div>
+
+            <div id="reg-btn">
+                Student Database 
+            </div>
         </div>
+        
         
         <div id="studentDetails">
             <div class="centre">
-                <h1>Student Registration</h1>
+                <h1>NEW STUDENT</h1>
             </div>
             <div class="form" >
                 <form action="registered.html" method="GET">
@@ -80,15 +88,17 @@
     $("#register").click(function(){
         $("#studentDetails").show();
         $("#registered").hide();
-        $("body").css("background-image","url(backgrd2.jpg)");
-    
+        $("body").css("background-image","url(page1.jpg)").css("background-size","cover");
+
     });
 
     $("#reg-btn").click(function(){
         $("#registered").show();
         $("#studentDetails").hide();
-        
+        $("body").css("background-image","url(page2.jpg)");
+        $("body").css("background-size","cover");
+        $("body").css("background-position","center");
+ 
     });
-
 
 </script>
